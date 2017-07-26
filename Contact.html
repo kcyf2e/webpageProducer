@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mini world cupcake</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/siteIcon.png"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<style type="text/css">
+	.topCarousel{
+		width:960px;
+		height:600px; 
+	}
+	
+.body #footer p {
+	font-family: 微軟正黑體;
+	text-align: center;
+	page-break-after: auto;
+}
+	#homeshop{
+		padding-top:20px; 
+	}
+</style>
+<link href="css/mainpage.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+main {
+	color: #64c4c7;
+}
+.body #footer tbody tr td {
+	font-family: 微軟正黑體;
+}
+</style>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC78ackpkP-Vgro6wxwjHkkEFjSNuSlosM&callback=initMap"></script>
+
+</head>
+
+<body class="body">
+
+	<div id="top"> 
+		<header id="topHeader" > 
+				<a href="index.php"><img src="images/headLogo.png" alt="miniCake"   class="center-block" id="toplogo"></a>
+		</header>
+		
+			<nav  class="navbar navbar-default ">
+			  <div class="container-fluid">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span> 
+					 </button>
+					</div>
+				  <!--  <nav id="mainNav" class="navbar navbar-collapse navbar-collapse-center" > -->
+						<div id="mainNav" class="collapse navbar-collapse navbar-collapse-center">
+							<ul class="nav nav-tabs navbar-center " >
+								<li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#" >關於我們<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+										<li><a href="aboutUs.html">品牌介紹</a></li>
+										<li><a href="doll.html">公仔介紹</a></li>
+								</ul>
+								</li>
+								<li><a href="news.html">最新消息</a></li>
+								<!--<li class="navbar-header">
+								<img alt="miniCake" src="images/minilogo.png" id="toplogo">
+								</li> -->
+
+							  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">產品介紹<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="html/product-p1.html">經典系列</a></li>
+										<li><a href="html/product-p3.html">可愛少女系</a></li>
+										<li><a href="html/product-p4.html">戀人專屬</a></li>
+										<li><a href="html/product-p2.html">濃情巧克力</a></li>
+										<li><a href="html/product-p5.html">特色主題</a></li>
+									</ul>
+							  </li>		 	
+							  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">購物專區<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+												<li><a href="Process.html">購物說明</a></li>
+												<li><a href="shopcart/cartindex.php">購物車</a></li>
+										</ul>
+							  </li>
+							  <li><a href="Contact.html">聯絡我們</a></li>
+						</ul>
+						</div>		
+				</nav>
+	</div>	
+	<div id="wrapper" class="container-fluid">
+		<main>
+			<ol id="breadG" class="breadcrumb">
+			  <li><a href="index.php">首頁</a></li>
+				<li class="active"><span style="color:#f7a1be">聯絡我們</span></li>	  
+			</ol> 			
+				<div class="row">
+				<div class="col-xs-6 col-sm-6" style="text-align: center">
+						<p>&nbsp;</p>						
+			      <img src="images/TXT-connection.png" width="243" height="108" alt="聯絡我們"/>
+				<form name="htmlform" method="post" action="html_form_send.php">
+						<table width="450px">
+							  <tr>
+								<td  align="right"><h3><span class="glyphicon glyphicon-envelope"  aria-hidden="true"></span> <strong>聯絡我們</strong></h3></td>
+							  </tr>			 
+								  <tr>
+									<td valign="top" align="right">
+									  <label for="first_name"> 會員帳號*</label>
+									</td>
+									<td valign="top">
+									  <input  type="text" name="first_name" maxlength="50" size="30" required>
+									</td>
+								  </tr>
+								  <tr>
+									<td valign="top"  align="right">
+									  <label for="last_name">姓名 *</label>
+									</td>
+									<td valign="top">
+									  <input  type="text" name="last_name" maxlength="50" size="30" required>
+									</td>
+								  </tr>
+								  <tr>
+									<td valign="top" align="right">
+									  <label for="email">Email *</label>
+									</td>
+									<td valign="top">
+									  <input  type="text" name="email" maxlength="80" size="30" required>
+									</td>
+								  </tr>
+								  <tr>
+									<td valign="top">&nbsp;</td>
+									<td valign="top">&nbsp;</td>
+								  </tr>
+								  <tr>
+									<td valign="top" align="right">您的意見</td>
+									<td valign="top">
+									  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+									</td>
+								  </tr>
+								  <tr>
+									<td colspan="2" style="text-align:center">
+									  <input type="button" onclick="alert('您的意見，我們會盡速處理，謝謝!'); javascript:window.location.reload();" value="送出"> 
+									</td>
+								  </tr>
+			  </table>
+					  </form>
+				</div>
+			  <div class="col-xs-12 col-sm-6"><img id="homeshop" src="images/about-shop.png" class="img-responsive" alt="小世界杯子蛋糕本店" title="小世界杯子蛋糕本店"/></div>
+			  </div>
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8"><hr>
+			<h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>我們的位置：</h4>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.3725323144863!2d120.67313731499515!3d24.12355198440671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693cfcecffe9d9%3A0xe28afadc0dad203a!2sNational+Chung+Hsing+University!5e0!3m2!1sen!2stw!4v1500213696146" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<p>&nbsp;</p>
+			</div>
+		</div>
+		</main>
+	</div>
+		
+<div class="container-fluid" id="footer"> 
+	<footer class="nav navbar">
+	  <ul id="footerTb" class="nav nav-tabs navbar-center noC"> 
+			<li><a href="sitemap.html">網站地圖</a></li>
+			<li><a href="https://www.facebook.com/lwcupcake/">官方粉絲團</a></li>
+	  		<li><a href="traffic.html">交通資訊</a></li>
+	  		<li><a href="Contact.html">聯絡我們</a></li>
+	</ul>
+	  <p class="noC">&copy; 2017 小世界杯子蛋糕 Corporation. All rights reserved.</p>  
+	</footer>
+</div>	
+	</body>
+</html>
